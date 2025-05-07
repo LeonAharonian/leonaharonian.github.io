@@ -1,0 +1,455 @@
+/* Variables */
+
+:root {
+    --bg-color: white;
+    --typewriterSpeed: 2.5s;
+    --typewriterSpeed2: 4s;
+    --typewriterSpeed3: 1.5s;
+    --typewriterCharacters1: 24;
+    --typewriterCharacters2: 31;
+    --typewriterCharacters3: 51;
+    --abtypewriterCharacters1: 16;
+    --abtypewriterCharacters2: 27;
+    --abtypewriterCharacters3: 14;
+    --abtypewriterCharacters4: 18;
+}
+
+/* Custom Scrollbar Code */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-track {
+    background: #1b1b1b;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #353535;
+}
+
+/* Element CSS code */
+
+
+body {
+    margin: 0;
+    font-family: "Source Sans Pro", monospace;
+    min-height: 100vh;
+    place-content: center;
+    text-align: center;
+    background: var(--bg-color);
+    color: black;
+} 
+
+  
+h1 {
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    width: max-content;
+    color: black;
+}
+
+h2 {
+    font-size: clamp(0.5rem, 2vw + 0.5rem, 2.5rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    width: max-content;
+    color: black;
+}
+
+p {
+    font-size: clamp(0.25rem, 1.5vw + 0.25rem, 2rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    width: fit-content;
+    color: black;
+}
+
+p2 {
+    font-size: clamp(0.25rem, 1.5vw + 0.25rem, 2rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    width: fit-content;
+    margin-right: 40%;
+    margin-left: 20%;
+    color: black;
+}
+img{
+    width: 50%;
+    margin: 2%;
+}
+
+/* Class CSS code */
+.menu:hover{
+    cursor: pointer;
+}
+
+.menu{
+    width: fit-content;
+}
+
+.bar{
+    margin-bottom: 5%;
+    text-align: left;
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.box{
+    width: 30%;
+}
+
+.inmain{
+    margin: 0;
+    font-family: "Source Sans Pro", monospace;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.main{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: "Source Sans Pro", monospace;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.bottom-margin{
+    margin-bottom: 10%;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+}
+
+.centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.border{
+    border: solid white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: max-content max-content;
+}
+
+/* Home page CSS code */
+  
+#in1::before,
+  
+#in1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+  
+#in1::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters1)) 1s forwards;
+}
+  
+#in1::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters1)) 1s forwards,
+      blink 750ms steps(var(--typewriterCharacters1)) 7;
+}
+  
+#in2::before,
+  
+#in2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+  
+#in2::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters2)) 6.25s forwards;
+}
+  
+#in2::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters2)) 6.25s forwards,
+      blink 750ms steps(var(--typewriterCharacters2)) 5.25s 7;
+}
+
+#in3::before,
+  
+#in3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+  
+#in3::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed2)
+      steps(var(--typewriterCharacters3)) 11.5s forwards;
+}
+  
+#in3::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed2)
+      steps(var(--typewriterCharacters3)) 11.5s forwards,
+      blink 750ms steps(var(--typewriterCharacters3)) 10.5s 8;
+}
+
+/* About Me page CSS code */
+
+#ab1::before,
+  
+#ab1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+  
+#ab1::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed3)
+      steps(var(--abtypewriterCharacters1)) 1s forwards;
+}
+  
+#ab1::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed3)
+      steps(var(--abtypewriterCharacters1)) 1s forwards,
+      blink 750ms steps(var(--abtypewriterCharacters1)) 6;
+}
+
+#abline2{
+    opacity: 0;
+    animation: appear 0s 4.5s forwards;
+}
+
+#ab2::before,
+  
+#ab2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+  
+#ab2::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed2)
+      steps(var(--abtypewriterCharacters2)) 5.5s forwards;
+}
+  
+#ab2::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed2)
+      steps(var(--abtypewriterCharacters2)) 5.5s forwards,
+      blink 750ms steps(var(--abtypewriterCharacters2)) 4.5s 9;
+}
+
+#academic{
+    opacity: 0;
+    animation: appear 0s 11.25s forwards;
+}
+
+#abline3{
+    opacity: 0;
+    animation: appear 0s 11.25s forwards;
+}
+
+#ab3::before,
+  
+#ab3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+  
+#ab3::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed3)
+      steps(var(--abtypewriterCharacters3)) 12.25s forwards;
+}
+  
+#ab3::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed3)
+      steps(var(--abtypewriterCharacters3)) 12.25s forwards,
+      blink 750ms steps(var(--abtypewriterCharacters3)) 11.25s 6;
+}
+
+#honors{
+    opacity: 0;
+    animation: appear 0s 15.75s forwards;
+}
+
+#abline4{
+    opacity: 0;
+    animation: appear 0s 15.75s forwards;
+}
+
+#ab4::before,
+  
+#ab4::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+  
+#ab4::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--abtypewriterCharacters4)) 16.75s forwards;
+}
+  
+#ab4::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--abtypewriterCharacters4)) 16.75s forwards,
+      blink 750ms steps(var(--abtypewriterCharacters4)) 15.75s 7;
+}
+
+#activities{
+    opacity: 0;
+    animation: appear 0s 21s forwards;
+}
+
+/* Animations */
+
+@keyframes typewriter {
+    to {
+      left: 100%;
+    }
+}
+
+@keyframes blink {
+    from{
+      background: white;
+    }
+    to {
+      background: transparent;
+    }
+}
+
+@keyframes appear {
+    to {
+      opacity: 1;
+    }
+}
+
+/*Navbar CSS Code */
+
+.opener{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  div2 {
+    border: 1px solid black;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-right: 40%;
+    margin-left: 20%;
+    background-color: lightblue;
+  }
+
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
